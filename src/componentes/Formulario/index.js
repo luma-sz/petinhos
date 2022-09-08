@@ -14,7 +14,6 @@ const Formulario = (props) => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        console.log('form =>', nome, idade, imagem, tipo)
         props.aoPetCadastrado({
             nome, idade, imagem,
         })

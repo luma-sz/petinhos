@@ -49,13 +49,19 @@ function App() {
   }
 
   return (
+    
     <div className="App">
       <Banner/>
-      <Formulario tipos={tipos.map(tipo => tipo.nome)}
-      aoPetCadastrado= {pet => aoNovoPetAdicionado(pet)}/>
+      <Formulario tipos={tipos.map(tipo => tipo.nome)} aoPetCadastrado= {pet => aoNovoPetAdicionado(pet)}/>
 
-      {tipos.map(tipo => <Tipo key={tipo.nome} nome={tipo.nome}  
-      corPrimaria={tipo.corPrimaria} corSecundaria={tipo.corSecundaria}/> )}
+      {tipos.map(tipo => <Tipo 
+      key={tipo.nome} 
+      nome={tipo.nome}  
+      corPrimaria={tipo.corPrimaria} 
+      corSecundaria={tipo.corSecundaria}
+      pets={pets.filter(pet => pet.tipo === tipo.nome)} 
+      />
+      )}
     </div>
   );
 }

@@ -1,0 +1,30 @@
+.pet {
+    width: 280px;
+}
+
+.pet .cabecalho {
+    background-color: #F0F0F0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.pet img {
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -50px;
+}
+
+.pet .rodape {
+    background: #FFFFFF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.pet .rodape .h4 {
+    color: #6278f7;
+    font-size: 18px;
+    line-height: 22px;
+    
+}
