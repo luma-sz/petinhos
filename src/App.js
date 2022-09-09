@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Banner from './componentes/Banner/Banner';
 import Formulario from './componentes/Formulario';
+import Rodape from './componentes/Rodape';
 import Tipo from './componentes/Tipo';
 
 function App() {
@@ -63,6 +64,8 @@ function App() {
       pets={pets.filter(pet => pet.tipo === tipo.nome)} 
       />
       )}
+      <Rodape/>
+
     </div>
   );
 }

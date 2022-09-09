@@ -1,0 +1,19 @@
+footer {
+    background-color: #6278F7;
+    text-align: center;
+    
+}
+
+.imagemRodape {
+    max-width: 100%;
+
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: black;
+}
