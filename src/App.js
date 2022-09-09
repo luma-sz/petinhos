@@ -46,7 +46,6 @@ function App() {
   const [pets, setPets] = useState([])
 
   const aoNovoPetAdicionado = (pet) => {
-
     setPets([...pets, pet])
   }
 
@@ -55,17 +54,10 @@ function App() {
     <div className="App">
       <Banner/>
       <Formulario tipos={tipos.map(tipo => tipo.nome)}  aoPetCadastrado= {pet => aoNovoPetAdicionado(pet)}/>
-
-      {tipos.map(tipo => <Tipo 
-      key={tipo.nome} 
-      nome={tipo.nome}  
-      corPrimaria={tipo.corPrimaria} 
-      corSecundaria={tipo.corSecundaria}
-      pets={pets.filter(pet => pet.tipo === tipo.nome)} 
-      />
+      {tipos.map(tipo => <Tipo key={tipo.nome} nome={tipo.nome} corPrimaria={tipo.corPrimaria} 
+      corSecundaria={tipo.corSecundaria} pets={pets.filter(pet => pet.tipo === tipo.nome)} />
       )}
       <Rodape/>
-
     </div>
   );
 }
