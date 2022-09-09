@@ -15,8 +15,12 @@ const Formulario = (props) => {
     const aoSalvar = (evento) => {
         evento.preventDefault()
         props.aoPetCadastrado({
-            nome, idade, imagem,
+            nome, idade, imagem, tipo
         })
+        setNome('')
+        setIdade('')
+        setImagem('')
+        setTipo('')
     }
 
     return (
