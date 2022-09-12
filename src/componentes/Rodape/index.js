@@ -5,7 +5,6 @@ const Rodape = () => {
         
             <footer>
             <img className='imagemRodape' src='/imagens/rodape.png' alt='Rodape da Petinhos'/>
-            <p>Por Luma</p>
             </footer>
         
     )
