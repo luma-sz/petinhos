@@ -1,6 +1,6 @@
 .tipo {
     text-align: center;
-    padding: 32px;
+    padding: 27px;
  
 }
 
@@ -8,7 +8,7 @@
     font-size: 32px;
     border-bottom: 4px solid;
     display: inline-block;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
 }
 
 .tipo .petsAdicionados {

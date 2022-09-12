@@ -7,7 +7,7 @@ import './Formulario.css'
 const Formulario = (props) => {
     
     const [nome, setNome] = useState('')
-    const [idade, setIdade] = useState('')
+    const [descricao, setDescricao] = useState('')
     const [imagem, setImagem] = useState('')
     const [tipo, setTipo] = useState('')
 
@@ -15,10 +15,10 @@ const Formulario = (props) => {
     const aoSalvar = (evento) => {
         evento.preventDefault()
         props.aoPetCadastrado({
-            nome, idade, imagem, tipo
+            nome, descricao, imagem, tipo
         })
         setNome('')
-        setIdade('')
+        setDescricao('')
         setImagem('')
         setTipo('')
     }
@@ -29,8 +29,8 @@ const Formulario = (props) => {
                 <h2>Preencha os dados para criar o card pet!</h2>
                 <CampoTexto obrigatorio={true} label="Nome" placeholder="Digite o nome do seu pet"
                  valor={nome} aoAlterado={valor => setNome(valor)}/>
-                <CampoTexto obrigatorio={true} label="Idade" placeholder="Digite a idade do seu pet"
-                 valor={idade} aoAlterado={valor => setIdade(valor)}/>
+                <CampoTexto obrigatorio={true} label="Descricao" placeholder="Deixe uma breve descrição"
+                 valor={descricao} aoAlterado={valor => setDescricao(valor)}/>
                 <CampoTexto obrigatorio={true} label="Imagem" placeholder="Digite o endereço da imagem"
                  valor={imagem} aoAlterado={valor => setImagem(valor)}/>
                 <ListaSuspensa  obrigatorio={true} label="Tipo" itens={props.tipos}

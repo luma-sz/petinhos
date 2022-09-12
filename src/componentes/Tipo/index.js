@@ -10,7 +10,7 @@ const Tipo = (props) => {
 
             <div className="petsAdicionados">
                 {props.pets.map(pet => <Pet corDeFundo={props.corPrimaria}  key={pet.nome} nome={pet.nome} 
-                idade={pet.idade} imagem={pet.imagem}/>)}
+                descricao={pet.descricao} imagem={pet.imagem}/>)}
             </div>
         </section>
         : ''

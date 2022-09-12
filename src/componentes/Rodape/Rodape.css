@@ -1,19 +1,18 @@
 footer {
     background-color: #6278F7;
     text-align: center;
-    
+    font-weight: bold;
 }
 
 .imagemRodape {
     max-width: 100%;
-
 }
 
-.copyright {
+footer h3 {
+    font-style: italic;
     text-align: center;
 }
 
-.copyright a {
+footer h3 a {
     text-decoration: none;
-    color: black;
 }

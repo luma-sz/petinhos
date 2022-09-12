@@ -1,5 +1,5 @@
 .campo-texto {
-    margin: 24px 0px;
+    margin: 10px 0px;
 }
 
 .campo-texto label {
@@ -13,7 +13,7 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.09);;
     width: 100%;
     border: none;
-    font-size: 24px;
+    font-size: 22px;
     padding: 22px;
     box-sizing: border-box;
 }

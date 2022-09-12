@@ -43,7 +43,68 @@ function App() {
   }
 ]
 
-  const [pets, setPets] = useState([])
+  const [pets, setPets] = useState([
+    {
+      nome: 'Mel',
+      descricao: 'Mel é carinhosa, gordinha e fofa',
+      imagem: 'https://i.ibb.co/vxTTngf/mel.jpg',
+      tipo: 'Gatos'
+    },
+    {
+      nome: 'Cherry',
+      descricao: 'Cherry prefere ficar na dela e ama sachês',
+      imagem: 'https://i.ibb.co/jfSFn5Q/cherry.jpg',
+      tipo: 'Gatos'
+    },
+    {
+      nome: 'Kitty',
+      descricao: 'Kitty é bagunceira e ama carinho',
+      imagem: 'https://i.ibb.co/gZ7d1M9/kitty.jpg',
+      tipo: 'Gatos'
+    },
+    {
+      nome: 'Fred',
+      descricao: 'Dentuço que ama legumes',
+      imagem: 'https://i.ibb.co/27TPbkD/fred.jpg',
+      tipo: 'Coelhos'
+    },
+    {
+      nome: 'Tico e Teco',
+      descricao: 'Irmãos inseparáveis :)',
+      imagem: 'https://i.ibb.co/XsfDtJ1/ticoeteco.jpg',
+      tipo: 'Aves'
+    },
+    {
+      nome: 'Rei Julian',
+      descricao: 'Exibido e que gosta de dançar!',
+      imagem: 'https://i.ibb.co/fNhsxHh/julian.jpg',
+      tipo: 'Exóticos'
+    },
+    {
+      nome: 'Feneco',
+      descricao: 'Fofo mas bravo também',
+      imagem: 'https://i.ibb.co/Mf1tqwn/feneco.jpg',
+      tipo: 'Exóticos'
+    },
+    {
+      nome: 'Juma',
+      descricao: 'Corajosa, brava e poderosa',
+      imagem: 'https://i.ibb.co/hFtPBgd/juma.jpg',
+      tipo: 'Selvagens'
+    },
+    {
+      nome: 'Alex',
+      descricao: 'o Rei',
+      imagem: 'https://i.ibb.co/8KSS0WR/alex.jpg',
+      tipo: 'Selvagens'
+    },
+    {
+      nome: 'Lean',
+      descricao: 'Gosta de dormir, correr e brincar muito',
+      imagem: 'https://i.ibb.co/whGLh3W/lean.jpg',
+      tipo: 'Outros'
+    }
+  ])
 
   const aoNovoPetAdicionado = (pet) => {
     setPets([...pets, pet])
